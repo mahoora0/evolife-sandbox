@@ -16,6 +16,10 @@ GRASS_SPAWN_RATE = 4  # Frames between automatic grass spawns
 INITIAL_HERBIVORES = 45
 INITIAL_CARNIVORES = 10
 
+# Safety caps keep long simulations from collapsing into runaway population spikes.
+MAX_HERBIVORES = 220
+MAX_CARNIVORES = 90
+
 # Base Energy Values
 GRASS_ENERGY = 35.0
 HERBIVORE_START_ENERGY = 120.0
@@ -95,6 +99,9 @@ SEASON_MODIFIERS = {
         "particle_type": "snow",
     },
 }
+
+# Telemetry
+HISTORY_LIMIT = 360
 
 # Interactive Config Toggles
 DEFAULT_SHOW_VISION = False
